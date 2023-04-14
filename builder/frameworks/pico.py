@@ -283,7 +283,7 @@ def add_sdk(env):
         new_delete = "-"
         pico_malloc = '-'
     filter = [ "+<*>",
-        "-<lib>",
+              #        "-<lib>",
         "-<boot_stage2>",
         "-<pico/pico_bit_ops>",
         "-<pico/pico_divider>",
@@ -298,8 +298,8 @@ def add_sdk(env):
         "-<pico/pico_mem_ops>",
         "-<pico/pico_standard_link/crt0.S>",
         # exclude LWIP stuff (only for Pico W)
-        "-<pico/pico_lwip>",
-        "-<pico/pico_cyw43_arch>",
+              #        "-<pico/pico_lwip>",
+              #        "-<pico/pico_cyw43_arch>",
         new_delete + "<pico/pico_standard_link/new_delete.cpp>",
         pico_malloc + "<pico/pico_malloc>"
     ]
